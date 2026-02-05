@@ -66,7 +66,7 @@ export ANSIBLE_PRIVATE_KEY_FILE="${PK}"
 export ANSIBLE_HOST_KEY_CHECKING=False
  
 # Run your playbook against the new inventory path
-ansible-playbook -i "${INVENTORY_FILE}" ansible/site.yml \
+ansible-playbook -i "${INVENTORY_FILE}" ansible/deploy.yml \
   --extra-vars "web_src=${WORKSPACE}/web/index.html"
 '''
         }
